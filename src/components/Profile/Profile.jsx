@@ -8,6 +8,7 @@ import {
   Item,
   Label,
   Quantity,
+  Name,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -22,7 +23,7 @@ export const Profile = ({
       <Thumb>
         <img src={avatar} alt={`${username} avatar`} />
       </Thumb>
-      <h2>{username}</h2>
+      <Name>{username}</Name>
       <Info>{tag}</Info>
       <Info>{location}</Info>
     </Description>

@@ -6,16 +6,15 @@ export const Section = styled.section`
   margin-left: auto;
   text-align: center;
   width: 420px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: ${props => props.theme.boxShadow};
 `;
 
 export const Title = styled.h2`
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #4d5258;
+  color: ${props => props.theme.colors.darkFont};
   text-transform: uppercase;
-  background-color: white;
+  background-color: ${props => props.theme.colors.primaryWhite};
 `;
 
 export const List = styled.ul`
@@ -33,10 +32,10 @@ export const Item = styled.li`
 `;
 
 export const Lable = styled.span`
-  color: white;
+  color: ${props => props.theme.colors.primaryWhite};
 `;
 
 export const Percentage = styled.span`
-  color: white;
+  color: ${props => props.theme.colors.primaryWhite};
   font-size: 20px;
 `;

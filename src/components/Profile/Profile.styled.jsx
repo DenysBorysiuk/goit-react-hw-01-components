@@ -7,15 +7,14 @@ export const ProfileWrap = styled.div`
   width: 285px;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: ${props => props.theme.boxShadow};
   overflow: hidden;
 `;
 
 export const Description = styled.div`
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.primaryWhite};
 `;
 
 export const Thumb = styled.div`
@@ -27,13 +26,17 @@ export const Thumb = styled.div`
   height: 113px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #f3f6f9;
+  background-color: ${props => props.theme.colors.lightBg};
+`;
+
+export const Name = styled.h2`
+  color: ${props => props.theme.colors.blackFont};
 `;
 
 export const Info = styled.span`
   margin-top: 10px;
   display: block;
-  color: #82909e;
+  color: ${props => props.theme.colors.primaryFont};
 `;
 
 export const Stats = styled.ul`
@@ -47,14 +50,14 @@ export const Item = styled.li`
   width: 95px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid #e4e9f0;
+  border: ${props => `1px solid ${props.theme.colors.lightBorder}`};
 `;
 
 export const Label = styled.span`
-  color: #82909e;
+  color: ${props => props.theme.colors.primaryFont};
 `;
 
 export const Quantity = styled.span`
-  color: #1f3349;
+  color: ${props => props.theme.colors.blackFont};
   font-weight: 700;
 `;

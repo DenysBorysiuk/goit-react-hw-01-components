@@ -2,12 +2,11 @@ import styled from '@emotion/styled';
 
 export const TransactionTable = styled.table`
   margin: 60px auto;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: ${props => props.theme.boxShadow};
 `;
 
 export const HeadRow = styled.tr`
-  background-color: #00bcd5;
+  background-color: ${props => props.theme.colors.tableBg};
 `;
 
 export const TableTitle = styled.th`
@@ -15,7 +14,7 @@ export const TableTitle = styled.th`
   padding-top: 8px;
   padding-bottom: 8px;
   text-transform: uppercase;
-  color: white;
+  color: ${props => props.theme.colors.primaryWhite};
 `;
 
 export const ValueRow = styled.tr`
@@ -28,6 +27,6 @@ export const TableValue = styled.th`
   padding-top: 8px;
   padding-bottom: 8px;
   text-transform: capitalize;
-  color: #818486;
+  color: ${props => props.theme.colors.primaryFont};
   font-weight: 400;
 `;

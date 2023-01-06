@@ -10,10 +10,9 @@ export const Item = styled.li`
   padding-bottom: 8px;
   padding-left: 8px;
   width: 300px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.primaryWhite};
   border-radius: 5px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: ${props => props.theme.boxShadow};
 `;
 
 export const Status = styled.span`
@@ -32,7 +31,7 @@ export const Thumb = styled.div`
   height: 74px;
   border-radius: 5px;
   overflow: hidden;
-  background-color: #f3f6f9;
+  background-color: ${props => props.theme.colors.lightBg};
 `;
 
 export const Avatar = styled.img`
@@ -40,7 +39,7 @@ export const Avatar = styled.img`
 `;
 
 export const Name = styled.p`
-  color: black;
+  color: ${props => props.theme.colors.blackFont};
   font-size: 20px;
   font-weight: 500;
 `;
