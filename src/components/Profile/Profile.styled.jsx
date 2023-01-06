@@ -37,7 +37,6 @@ export const Info = styled.span`
 `;
 
 export const Stats = styled.ul`
-  list-style: none;
   display: flex;
 `;
 
