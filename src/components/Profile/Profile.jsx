@@ -20,7 +20,7 @@ export const Profile = ({
   <ProfileWrap>
     <Description>
       <Thumb>
-        <img src={avatar} alt="User avatar" />
+        <img src={avatar} alt={`${username} avatar`} />
       </Thumb>
       <h2>{username}</h2>
       <Info>{tag}</Info>
