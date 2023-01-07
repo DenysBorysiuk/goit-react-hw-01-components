@@ -11,7 +11,7 @@ export const Item = styled.li`
   padding-left: 8px;
   width: 300px;
   background-color: ${props => props.theme.colors.primaryWhite};
-  border-radius: 5px;
+  border-radius: ${props => props.theme.borderRadius};
   box-shadow: ${props => props.theme.boxShadow};
 `;
 

@@ -6,7 +6,7 @@ export const ProfileWrap = styled.div`
   margin-left: auto;
   width: 285px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: ${props => props.theme.borderRadius};
   box-shadow: ${props => props.theme.boxShadow};
   overflow: hidden;
 `;

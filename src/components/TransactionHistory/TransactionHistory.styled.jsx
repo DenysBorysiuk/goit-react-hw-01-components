@@ -2,6 +2,9 @@ import styled from '@emotion/styled';
 
 export const TransactionTable = styled.table`
   margin: 60px auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: ${props => props.theme.borderRadius};
   box-shadow: ${props => props.theme.boxShadow};
 `;
 

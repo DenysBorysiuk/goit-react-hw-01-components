@@ -7,6 +7,8 @@ export const Section = styled.section`
   text-align: center;
   width: 420px;
   box-shadow: ${props => props.theme.boxShadow};
+  border-radius: ${props => props.theme.borderRadius};
+  overflow: hidden;
 `;
 
 export const Title = styled.h2`
