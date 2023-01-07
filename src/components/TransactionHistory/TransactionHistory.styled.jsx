@@ -18,12 +18,16 @@ export const TableTitle = styled.th`
   padding-bottom: 8px;
   text-transform: uppercase;
   color: ${props => props.theme.colors.primaryWhite};
+  border-right: 1px solid;
+  :last-child {
+    border-right: none;
+  }
 `;
 
 export const ValueRow = styled.tr`
-  background-color: ${props => {
-    return props.index % 2 === 0 ? 'white' : '#ecf1f4';
-  }};
+  :nth-of-type(odd) {
+    background-color: ${props => props.theme.colors.primaryWhite};
+  }
 `;
 export const TableValue = styled.th`
   width: 240px;
@@ -32,4 +36,8 @@ export const TableValue = styled.th`
   text-transform: capitalize;
   color: ${props => props.theme.colors.primaryFont};
   font-weight: 400;
+  border-right: ${props => `1px solid ${props.theme.colors.lightBorder}`};
+  :last-child {
+    border-right: none;
+  }
 `;
