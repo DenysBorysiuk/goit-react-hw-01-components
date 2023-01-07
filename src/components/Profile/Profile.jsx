@@ -24,7 +24,7 @@ export const Profile = ({
         <img src={avatar} alt={`${username} avatar`} />
       </Thumb>
       <Name>{username}</Name>
-      <Info>{tag}</Info>
+      <Info>@{tag}</Info>
       <Info>{location}</Info>
     </Description>
 
